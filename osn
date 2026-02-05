@@ -1,0 +1,16 @@
+#include <iostream>
+//tipe data, nama function()
+using namespace std;
+//function hitung luas tanah persegi panjang
+int fpb(int angkapertama,  int angkakedua){
+    while(angkakedua !=0){ 
+         int sisa = angkapertama % angkakedua;
+        angkapertama = angkakedua;
+        angkakedua = sisa;
+    }
+    return angkapertama;
+}
+int main(){
+cout<<fpb(12,4)<<endl;
+    return 0;
+}
